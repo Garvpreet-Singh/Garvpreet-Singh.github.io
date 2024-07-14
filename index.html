@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<script src="scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
 </head>
 <body>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+<div class="navbar">
+  <div class="logo">My Portfolio</div>
+  <div class="burger" onclick="toggleMenu()">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</a>
+    <a href="#" class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</a>
+    <a href="#" class="tablinks" onclick="openTab(event, 'AcademicProgress')">Academic Progress</a>
+    <a href="#" class="tablinks" onclick="openTab(event, 'ContactInfo')">Contact Info</a>
+  </div>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="AboutMe" class="tabcontent">
+  <h1>About Me</h1>
+  <p>Welcome to my portfolio! Here you can learn more about me.</p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id="Portfolio" class="tabcontent">
+  <h1>Portfolio</h1>
+  <p>Check out some of my cool projects.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="AcademicProgress" class="tabcontent">
+  <h1>Academic Progress</h1>
+  <p>Here's an overview of my current coursework.</p>
 </div>
 
+<div id="ContactInfo" class="tabcontent">
+  <h1>Contact Info</h1>
+  <p>You can reach me at myemail@example.com.</p>
+</div>
+
+<script src="scripts.js"></script>
 </body>
-</html> 
+</html>

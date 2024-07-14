@@ -1,38 +1,103 @@
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: right;
-  border: none;
-  outline: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.navbar .burger {
+  display: none;
+  flex-direction: column;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.navbar .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px;
+  transition: all 0.3s;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .navbar .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .navbar .nav-links a {
+    margin: 10px 0;
+  }
+
+  .navbar .burger {
+    display: flex;
+  }
+
+  .navbar .burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .navbar .burger.toggle .line2 {
+    opacity: 0;
+  }
+
+  .navbar .burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.tabcontent h1 {
+  margin-top: 0;
+}
+
+.tabcontent:first-of-type {
+  display: block;
 }
