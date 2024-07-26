@@ -9,40 +9,56 @@
 <body onload="openTab(event, 'AboutMe')">
 
 <div class="navbar">
-  <div class="logo">My Portfolio</div>
+  <div class="logo">Garvpreet</div>
   <div class="burger" onclick="toggleMenu()">
     <div class="line1"></div>
     <div class="line2"></div>
     <div class="line3"></div>
   </div>
   <div class="nav-links" id="navLinks">
-    <a href="#" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</a>
-    <a href="#" class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</a>
-    <a href="#" class="tablinks" onclick="openTab(event, 'AcademicProgress')">Academic Progress</a>
-    <a href="#" class="tablinks" onclick="openTab(event, 'ContactInfo')">Contact Info</a>
+    <a href="index.html">About Me</a>
+    <a href="pages/portfolio.html">Projects</a>
+    <a href="pages/academicProgress.html">Academic Progress</a>
+    <a href="pages/contact.html">Contact Info</a>
+    
+</div>
+</div>
+<div class="intro-content" id="intro-content">
+  <h1>I'm Garvpreet</h1>
+  <!-- Self portrait image -->
+  <img class="intro-portrait" src="images/" alt="">
+
+  <div class="intro-text">
+    <p>Welcome to my portfolio! Here you can learn more about me.</p>
   </div>
 </div>
 
-<div id="AboutMe" class="tabcontent">
-  <h1>About Me</h1>
-  <p>Welcome to my portfolio! Here you can learn more about me.</p>
-</div>
+  <!-- Main content section. -->
+  <main id="main-content">
+    <section id="AboutMe" class="tabcontent">
+      <div class="flex-container main-about">
+        <div class="flex-box flex-title">
+          <h1>About Me</h1>
+        </div>
 
-<div id="Portfolio" class="tabcontent">
-  <h1>Portfolio</h1>
-  <p>Check out some of my cool projects.</p> 
-</div>
+        <div class="flex-box flex-details">
+          <ul>
+            <li>Second-year Software Engineering student at The University of Waikato</li>
+            <li>Proficient in C#, Wramp (Assembly language), Java, SQL, HTML, CSS, and JavaScript</li>
+            <li>Skilled in JIRA, Git, and SQL Server Management Studio (SSMS)</li>
+            <li>Strong teamwork, problem-solving, and adaptability skills</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<div id="AcademicProgress" class="tabcontent">
-  <h1>Academic Progress</h1>
-  <p>Here's an overview of my current coursework.</p>
-</div>
+    
 
-<div id="ContactInfo" class="tabcontent">
-  <h1>Contact Info</h1>
-  <p>You can reach me at myemail@example.com.</p>
-</div>
+  <!-- Footer section -->
+  <footer>
+    <!-- Make a sticky footer with a button that scrolls to the top upon click -->
+  </footer>
 
-<script src="scripts.js"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
