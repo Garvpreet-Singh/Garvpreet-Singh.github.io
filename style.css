@@ -8,11 +8,10 @@
 }
 
 .intro-content > h1 {
-  font-family: "Sacramento", cursive;
   font-size: 5rem;
 }
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -205,6 +204,7 @@ table.center-table tbody td {
 
 .intro-content {
   padding: 2%;
+  
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -250,7 +250,6 @@ table.center-table tbody td {
   /* Unicode character for "minus" sign (-) */
 }
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
