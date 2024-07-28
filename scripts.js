@@ -69,6 +69,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 function goBack() {
-    window.history.back();
+  window.location.href = "../portfolio.html"; 
 }
     
