@@ -66,3 +66,9 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+function goBack() {
+    window.history.back();
+}
+    
