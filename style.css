@@ -464,10 +464,11 @@ tr:hover {
 .intro-heading {
   font-size: 5em; /* Adjust this size as needed for larger screens */
   display: inline-block; /* Ensures background is only behind the text */
-  background-color: rgba(226, 200, 170, 0.7); /* Slightly transparent background */
+  background-image: linear-gradient(to right, rgba(3, 120, 190, 0.5), rgba(254, 236, 204, 0.5)); /* Gradient from blue to orange with more transparency */
   padding: 0.2em 0.4em; /* Optional padding to add space around the text */
   border-radius: 10px; /* Rounded corners */
 }
+
 
 
 @media (max-width: 600px) {
