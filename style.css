@@ -1,13 +1,11 @@
 .intro-content {
   color: white;
-  padding: 5% 0 10%;
+  padding: 2%;
   background-image: url(images/test.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
 }
-
-
 
 body {
   margin: 0;
@@ -21,20 +19,20 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #1a4f83;
-  padding: 15px 30px; /* Increase padding for larger area */
+  padding: 15px 30px;
   position: relative;
 }
 
 /* Logo */
 .logo-img {
-  height: 75px; /* Increase size of the logo */
+  height: 75px;
   width: auto;
 }
 
 /* Navigation links */
 .navbar .logo {
   color: #fff;
-  font-size: 30px; /* Increase font size */
+  font-size: 30px;
   font-family: "Sacramento", cursive;
 }
 
@@ -46,14 +44,14 @@ body {
 .navbar .nav-links a {
   color: #fff;
   text-decoration: none;
-  margin-left: 30px; /* Increase margin for spacing */
-  padding: 12px 24px; /* Increase padding for larger clickable area */
-  font-size: 1.25rem; /* Increase font size */
+  margin-left: 30px;
+  padding: 12px 24px;
+  font-size: 1.25rem;
   transition: background-color 0.3s;
 }
 
 .navbar .nav-links a:hover {
-  background-color: #1a4f83;
+  background-color: #e2c8aa;
   border-radius: 4px;
 }
 
@@ -65,10 +63,10 @@ body {
 }
 
 .navbar .burger div {
-  width: 35px; /* Increase size of burger lines */
-  height: 5px; /* Increase size of burger lines */
+  width: 35px;
+  height: 5px;
   background-color: #fff;
-  margin: 6px; /* Increase space between lines */
+  margin: 6px;
   transition: all 0.3s;
 }
 
@@ -76,19 +74,19 @@ body {
 @media screen and (max-width: 768px) {
   .navbar .nav-links {
     position: absolute;
-    top: 100%; /* Adjust position */
+    top: 80px;
     left: 0;
     right: 0;
     background-color: #333;
     flex-direction: column;
     align-items: center;
     display: none;
-    z-index: 999; /* Ensure dropdown menu is above other content */
+    z-index: 999;
   }
 
   .navbar .nav-links a {
-    margin: 15px 0; /* Adjust margin for spacing */
-    font-size: 1.5rem; /* Increase font size for mobile */
+    margin: 15px 0;
+    font-size: 1.5rem;
   }
 
   .navbar .burger {
@@ -112,11 +110,11 @@ body {
   display: none;
   padding: 20px;
   background-color: #fff;
-  margin: 20px auto; /* Center the content */
+  margin: 20px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  width: 80%; /* Set the width of the tab content */
-  max-width: 1000px; /* Set a maximum width */
+  width: 80%;
+  max-width: 1000px;
 }
 
 .tabcontent h1 {
@@ -132,10 +130,6 @@ body {
   width: 80%;
   background-color: white;
   color: black;
-}
-
-.intro-content {
-  padding: 2%; /* Adjust padding for larger area */
 }
 
 .grid-wrapper {
@@ -184,26 +178,21 @@ body {
 }
 
 table.center-table {
-  width: 60%; /* Adjust width for smaller table */
-  margin: 0 auto; /* Center the table */
+  width: 60%;
+  margin: 0 auto;
   text-align: center;
   border-collapse: collapse;
 }
 
 table.center-table thead td {
   font-weight: bold;
-  background-color: #1a4f83; /* Add background color to header */
-  color: white; /* White text color for header */
-  padding: 10px; /* Add padding for header cells */
+  background-color: #1a4f83;
+  color: white;
+  padding: 10px;
 }
 
 table.center-table tbody td {
-  padding: 10px; /* Add padding for body cells */
-}
-
-.intro-content {
-  padding: 2%;
-  
+  padding: 10px;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -217,8 +206,8 @@ table.center-table tbody td {
   border: none;
   outline: none;
   transition: 0.4s;
-  min-height: 50px; /* Set a minimum height */
-  min-width: 200px; /* Set a minimum width */
+  min-height: 50px;
+  min-width: 200px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -237,7 +226,6 @@ table.center-table tbody td {
 
 .accordion:after {
   content: '\02795';
-  /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
   float: right;
@@ -246,150 +234,13 @@ table.center-table tbody td {
 
 .active:after {
   content: "\2796";
-  /* Unicode character for "minus" sign (-) */
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-/* Navbar container */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1a4f83;
-  padding: 15px 30px;
-  position: relative;
-}
-
-/* Logo */
-.logo-img {
-  height: 75px;
-  width: auto;
-}
-
-/* Navigation links */
-.navbar .logo {
-  color: #fff;
-  font-size: 30px;
-}
-
-.navbar .nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 30px;
-  padding: 12px 24px;
-  font-size: 1.25rem;
-  transition: background-color 0.3s;
-}
-
-.navbar .nav-links a:hover {
-  background-color: #e2c8aa;
-  border-radius: 4px;
-}
-
-/* Burger menu (for mobile view) */
-.navbar .burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.navbar .burger div {
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
-  margin: 6px;
-  transition: all 0.3s;
-}
-
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-  .navbar .nav-links {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-  }
-
-  .navbar .nav-links a {
-    margin: 15px 0;
-    font-size: 1.5rem;
-  }
-
-  .navbar .burger {
-    display: flex;
-  }
-
-  .navbar .burger.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .navbar .burger.toggle .line2 {
-    opacity: 0;
-  }
-
-  .navbar .burger.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
 }
 
 .accordion-container {
   width: 80%;
   max-width: 1000px;
-  margin: 0 auto; /* Center the container */
-  text-align: left; /* Align text to the left */
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  text-align: left; /* Align text to the left */
-  min-height: 50px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
-.accordion:after {
-  content: '\02795';
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2796";
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* Table styling */
@@ -416,20 +267,11 @@ tr:nth-child(even) {
 tr:hover {
   background-color: #ddd;
 }
-.main-contact {
-  font-size: 2rem;
-}
 
 .project-card {
   display: block;
   text-decoration: none;
-  color: inherit; /* This will keep the text color the same as the parent element */
-}
-
-.project-card:hover {
-  /* Optionally add styles for when the user hovers over the project card */
   color: inherit;
-  text-decoration: none;
 }
 
 .github-button {
@@ -440,7 +282,7 @@ tr:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  float: right; /* This will align the button to the right */
+  float: right;
 }
 
 .project-image {
@@ -452,32 +294,25 @@ tr:hover {
 
 @media (max-width: 600px) {
   .project-image {
-      float: none;
-      display: block;
-      margin: 0 auto 20px auto;
-      width: 100%;
-      max-width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
 /* Default styles for larger screens */
 .intro-heading {
-  font-size: 5em; /* Adjust this size as needed for larger screens */
-  display: inline-block; /* Ensures background is only behind the text */
-  background-image: linear-gradient(to right, rgba(3, 120, 190, 0.5), rgba(254, 236, 204, 0.5)); /* Gradient from blue to orange with more transparency */
-  padding: 0.2em 0.4em; /* Optional padding to add space around the text */
-  border-radius: 10px; /* Rounded corners */
+  font-size: 5em;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(3, 120, 190, 0.5), rgba(254, 236, 204, 0.5));
+  padding: 0.2em 0.4em;
+  border-radius: 10px;
 }
-
-
 
 @media (max-width: 600px) {
   .intro-heading {
-      font-size: 3em; /* Adjust this size as needed for smaller screens */
+    font-size: 3em;
   }
 }
-
-
-
-
-  
