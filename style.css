@@ -141,23 +141,9 @@ body {
   text-align: center;
 }
 
-.project-card {
-  height: 450px;
-  border-radius: 5%;
-  background-color: #f2f2f2;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  padding: 5%;
-  overflow: hidden;
-}
 
-.project-card:hover {
-  background-color: #1a4f83;
-  color: white;
-}
 
-.project-card-preview {
-  width: 225px;
-}
+
 
 .main-contact {
   font-size: 2rem;
@@ -268,11 +254,6 @@ tr:hover {
   background-color: #ddd;
 }
 
-.project-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
 
 .github-button {
   margin-top: 20px;
@@ -290,6 +271,13 @@ tr:hover {
   width: 350px;
   height: auto;
   margin: 0 0 10px 10px;
+}
+
+.project-image2 {
+  float: right;
+  width: 350px;
+  margin: 0 0 10px 10px;
+  height: 350px;
 }
 
 @media (max-width: 600px) {
@@ -316,3 +304,48 @@ tr:hover {
     font-size: 3em;
   }
 }
+
+
+.project-card {
+  height: 450px;
+  border-radius: 5%;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 10%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center content horizontally */
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card h2,
+.project-card p {
+  margin: 0; /* Remove default margin */
+}
+
+.project-card iframe {
+  flex-grow: 1; /* Let the iframe take up the available space */
+  width: 100%; /* Ensure iframe takes up the full width */
+  max-height: 80%; /* Ensure iframe fits within its container */
+  border: 0; 
+  padding: 15px;
+}
+
+.project-card:hover {
+  background-color: #1a4f83;
+  color: white;
+}
+
+.project-card-preview {
+  width: 250px;
+  padding: 15px;
+}
+
+.project-card p:last-child {
+  margin-top: auto; /* Push the last <p> to the bottom */
+  text-align: center; /* Center align the text */
+}
+
