@@ -14,7 +14,10 @@ function openTab(evt, tabName) {
   }
 
   // Show the current tab and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
+  var activeTab = document.getElementById(tabName);
+  if (activeTab) {
+    activeTab.style.display = "block";
+  }
   if (evt) {
     evt.currentTarget.className += " active";
   }
@@ -46,10 +49,14 @@ function toggleMenu() {
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-// Set the first accordion to be active and its panel to be open
-acc[0].classList.toggle("active");
-var mainPanel = document.getElementsByClassName("main-panel");
-mainPanel[0].style.display = "block";
+if (acc.length > 0) {
+  // Set the first accordion to be active and its panel to be open.
+  acc[0].classList.toggle("active");
+  var mainPanel = document.getElementsByClassName("main-panel");
+  if (mainPanel.length > 0) {
+    mainPanel[0].style.display = "block";
+  }
+}
 
 // Add click event listeners to all accordion elements
 for (i = 0; i < acc.length; i++) {

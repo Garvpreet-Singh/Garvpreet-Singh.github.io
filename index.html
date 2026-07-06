@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Garvpreet Singh - Software Engineering portfolio featuring full-stack, IoT, and AI-powered projects.">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+  <title>Garvpreet Singh | Software Engineer</title>
 </head>
+<body>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-60183Z86Q0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-60183Z86Q0');
 </script>
-  <title>Garv's Main Page</title>
-</head>
-<body onload="openTab(event, 'AboutMe')">
 
 <div class="navbar">
   <div class="logo">Garvpreet</div>
@@ -30,49 +29,101 @@
   <div class="nav-links" id="navLinks">
     <a href="index.html">About Me</a>
     <a href="pages/portfolio.html">Projects</a>
-    
     <a href="pages/contact.html">Contact Info</a>
-    
-</div>
-</div>
-<div class="intro-content" id="intro-content">
-  <h1 class="intro-heading">I'm Garvpreet</h1>
-
-  
-  <!-- Self portrait image -->
-  <img class="intro-portrait" src="images/" alt="">
-
-  <div class="intro-text">
-    <p>Welcome to my portfolio! Here you can learn more about me.</p>
   </div>
 </div>
 
-  <!-- Main content section. -->
-  <main id="main-content">
-    <section id="AboutMe" class="tabcontent">
-      <div class="flex-container main-about">
-        <div class="flex-box flex-title">
-          <h1>About Me</h1>
-        </div>
+<div class="intro-content" id="intro-content">
+  <h1 class="intro-heading">I'm Garvpreet</h1>
+  <div class="intro-text">
+    <p>a final-year Software Engineering student at the University of Waikato. I build full-stack products, IoT monitoring systems, and practical AI tools with a strong focus on client outcomes.</p>
+    <div class="hero-actions">
+      <a href="pages/portfolio.html" class="primary-button">View Projects</a>
+      <a href="pages/contact.html" class="secondary-button">Get In Touch</a>
+    </div>
+  </div>
+</div>
 
-        <div class="flex-box flex-details">
-          <ul>
-           <li>Third-year Software Engineering student at the University of Waikato (expected graduation: 2026)</li>
-           <li>Experienced in C#, Python, Java, SQL, JavaScript (AJAX, Fetch, Chart.js), React, HTML, CSS and WRAMP (Assembly)</li>
-            <li>Skilled in JIRA, Git, and SQL Server Management Studio (SSMS)</li>
-            <li>Strong teamwork, problem-solving, and adaptability skills</li>
-          </ul>
-        </div>
+<main id="main-content" class="page-content">
+  <section class="tabcontent profile-panel">
+    <h2>About Me</h2>
+    <p>
+      I was born and raised in Hamilton, Waikato, and I'm currently in my final year of a Bachelor of Engineering (Honours) in Software Engineering at the University of Waikato.
+    </p>
+    <p>
+      I'm passionate about building software that solves real problems and creates meaningful experiences for the people who use it. Whether I'm developing full-stack web applications, cloud-integrated systems, or experimenting with new technologies, I enjoy the challenge of turning ideas into practical, reliable solutions. I'm particularly interested in learning how different technologies work together and continuously expanding my skills as new tools and frameworks emerge.
+    </p>
+    <p>
+      One of the aspects of software engineering I enjoy most is working with others. I like collaborating with clients and teammates to understand their ideas, gather requirements, and transform them into software that delivers real value. Throughout my studies and industry experience, I've learned that successful software isn't just about writing good code, it's about communication, problem solving, and understanding the people you're building for.
+    </p>
+    <p>
+      When I'm not programming, I enjoy working on personal projects, spending time with friends, and exploring places around New Zealand. Whether it's a drive to Raglan, relaxing at the beach, or simply playing video games at home, I believe maintaining a healthy balance outside of software helps keep me curious, motivated, and ready for the next challenge.
+    </p>
+  </section>
+
+  <section class="tabcontent profile-panel">
+    <h2>Core Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <p>Python, Java, TypeScript, JavaScript, C#, SQL, HTML/CSS, WRAMP Assembly</p>
       </div>
-    </section>
-    
-    
+      <div class="skill-card">
+        <h3>Frameworks & Tech</h3>
+        <p>React, Node.js, Flask, Tailwind CSS, REST APIs, HLS streaming, Webhooks, Modbus RTU, Raspberry Pi</p>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>Git, GitHub, Postman, JIRA, Linux, Render, SSMS, JSON, MySQL</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Footer section -->
-  <footer>
-    <!-- Make a sticky footer with a button that scrolls to the top upon click -->
-  </footer>
+  <section class="tabcontent profile-panel">
+    <h2>Recent Experience</h2>
+    <div class="experience-list">
+      <article class="experience-item">
+        <h3>Software Engineering Intern - RevoTech Ltd</h3>
+        <p class="experience-meta">Auckland, NZ | Nov 2025 - Feb 2026</p>
+        <ul>
+          <li>Built Python telemetry services on Raspberry Pi to poll EPEVER charge controllers via Modbus RTU and push battery, PV, and load metrics to cloud endpoints.</li>
+          <li>Developed React and Node.js/TypeScript monitoring features for low-battery alerting, real-time dashboards, and authenticated third-party integrations.</li>
+          <li>Implemented HLS live streaming, timeline playback, and webhook-triggered clip retrieval while debugging token and timestamp issues across distributed systems.</li>
+        </ul>
+      </article>
+      <article class="experience-item">
+        <h3>Software Developer (Client Project) - The Sculpture Park at Waitakaruru Arboretum</h3>
+        <p class="experience-meta">Waikato, NZ | Jul 2025 - Oct 2025</p>
+        <ul>
+          <li>Delivered a React + TypeScript + Tailwind progressive web app replacing a printed catalogue with photo-based plant identification.</li>
+          <li>Integrated Pl@ntNet and Gemini services with searchable CSV-backed data and IndexedDB offline support for low-connectivity use cases.</li>
+          <li>Built a C# admin tool for non-technical staff to manage plant records and trigger deployment workflows.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-    <script src="scripts.js"></script>
-  </body>
+  <section class="tabcontent profile-panel">
+    <h2>Featured Work</h2>
+    <ul class="project-links-list">
+      <li><a href="pages/projects/circuit-simulator.html">RevoApp Intelligent Monitoring Platform</a></li>
+      <li><a href="pages/projects/project-manager.html">Revo Solar Monitoring System</a></li>
+      <li><a href="pages/projects/android-app.html">Digital Plant Identification App</a></li>
+      <li><a href="pages/projects/educational-tool.html">How Many Elephants?</a></li>
+    </ul>
+  </section>
+
+  <section class="tabcontent profile-panel">
+    <h2>Education</h2>
+    <p><strong>University of Waikato, Hamilton</strong><br>Bachelor of Engineering (Honours), Software Engineering<br>2023 - Expected Q4 2026</p>
+    <p><strong>Hamilton Boys' High School, Hamilton</strong><br>Completed all 3 levels of NCEA<br>2018 - 2022</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Built by Garvpreet Singh</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
 </html>

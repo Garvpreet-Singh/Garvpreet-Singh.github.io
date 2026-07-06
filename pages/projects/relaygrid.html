@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelayGrid Project</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-60183Z86Q0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-60183Z86Q0');
+</script>
+<body>
+    <div class="navbar">
+        <div class="logo">Garvpreet</div>
+        <div class="burger" onclick="toggleMenu()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="../../index.html">About Me</a>
+          <a href="../portfolio.html">Projects</a>
+          <a href="../contact.html">Contact Info</a>
+      </div>
+      </div>
+
+    <main id="main-content">
+      <section class="tabcontent">
+        <div class="flex-container main-about">
+          <div class="flex-box flex-title">
+            <h1>RelayGrid (In Progress)</h1>
+            <p>RelayGrid is a decentralised, offline-first disaster communication platform designed for situations where normal communication infrastructure, such as mobile networks or internet access, may be unavailable.</p>
+            <p>The project explores how nearby devices can communicate using mesh-style peer-to-peer networking, allowing disaster-related information to be shared locally and relayed between users.</p>
+
+            <h2>Project Aim</h2>
+            <p>The aim of RelayGrid is to investigate and develop a prototype system that supports communication and coordination during disaster scenarios when traditional infrastructure is disrupted.</p>
+
+            <h2>Key Ideas</h2>
+            <ul>
+                <li>Offline-first communication</li>
+                <li>Peer-to-peer device discovery</li>
+                <li>Mesh style message relay</li>
+                <li>Local storage of disaster-related information</li>
+                <li>Synchronisation when connectivity becomes available</li>
+                <li>Support for emergency coordination and situational awareness</li>
+            </ul>
+
+            <h2>Technologies Being Explored</h2>
+            <ul>
+                <li>Bluetooth Low Energy (BLE)</li>
+                <li>Wi-Fi Direct</li>
+                <li>Mobile application development</li>
+                <li>Local data storage</li>
+                <li>Peer-to-peer communication</li>
+                <li>Message forwarding and synchronisation</li>
+            </ul>
+
+            <h2>Status</h2>
+            <p>This project is currently in the early development and planning stage.</p>
+
+            <button onclick="goBack()" style="margin-top: 20px; background-color: #1a4f83; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Go Back</button>
+            <button onclick="window.open('https://github.com/Garvpreet-Singh', '_blank')" class="github-button">Repository is Private (Not Public Yet)</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../scripts.js"></script>
+</body>
+</html>

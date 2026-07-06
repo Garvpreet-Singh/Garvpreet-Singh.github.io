@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoundUp Project</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-60183Z86Q0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-60183Z86Q0');
+</script>
+<body>
+    <div class="navbar">
+        <div class="logo">Garvpreet</div>
+        <div class="burger" onclick="toggleMenu()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="../../index.html">About Me</a>
+          <a href="../portfolio.html">Projects</a>
+          <a href="../contact.html">Contact Info</a>
+      </div>
+      </div>
+
+   
+    <main id="main-content" class="main-contact">
+        <div class="contact-details-container">
+            
+        </div>
+    </main>
+    <main id="main-content">
+      <section id="AboutMe" class="tabcontent">
+        <div class="flex-container main-about">
+          <div class="flex-box flex-title">
+            <h1>RoundUp</h1>
+            <img src="../../images/roundup.png" alt="RoundUp app dashboard" class="project-image">
+            <p>RoundUp is a personal finance web application that automatically rounds up everyday purchases to the nearest dollar and invests the accumulated spare change into a user's Sharesies investment account.</p>
+            <p>The platform combines Open Banking transaction data with roundup calculations, a persistent ledger, and transfer generation to make investing effortless and transparent. It is designed around real user control, strong financial visibility, and practical automation.</p>
+            <h2>How It Works</h2>
+            <ul>
+                <li>The user securely connects their New Zealand bank account through Akahu.</li>
+                <li>RoundUp retrieves recent transactions and calculates eligible roundup amounts.</li>
+                <li>Spare change is accumulated daily and prepared for transfer to Sharesies.</li>
+                <li>Sharesies auto-invest can then invest deposited funds based on the user's investment plan.</li>
+            </ul>
+            <h2>Tech Stack</h2>
+            <p><strong>Frontend:</strong> React, TypeScript, Vite, TanStack Start, Tailwind CSS</p>
+            <p><strong>Backend (planned):</strong> Node.js/Express, PostgreSQL, Render</p>
+            <p><strong>APIs:</strong> Akahu Open Banking, Sharesies bank transfer funding, Akahu Payments (planned)</p>
+            <h2>Current Progress</h2>
+            <ul>
+                <li><strong>Completed:</strong> Akahu integration, account connection, transaction retrieval, roundup engine, Sharesies funding workflow design.</li>
+                <li><strong>In Progress:</strong> Persistent roundup database, transaction synchronization, dashboard improvements, transfer history.</li>
+                <li><strong>Planned:</strong> Akahu Payment API integration, automatic payment authorization, mobile app, analytics, goals, and notifications.</li>
+            </ul>
+            <button onclick="goBack()" style="margin-top: 20px; background-color: #1a4f83; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Go Back</button>
+            <button onclick="window.open('https://github.com/Garvpreet-Singh', '_blank')" class="github-button">Repository is Private (Not Public Yet)</button>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+    </footer>
+    
+    <script src="../../scripts.js"></script>
+</body>
+</html>
